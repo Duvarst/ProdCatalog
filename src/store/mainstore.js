@@ -53,9 +53,9 @@ export default {
   },
   actions: {
     async load({ commit }) {
-      let datainfo = await sendProdArr();
+      let datainfo = sendProdArr();
       commit("setData", datainfo);
-      let catArr = await catRet();
+      let catArr = catRet();
       commit("setCategory", catArr);
     },
     setId({ commit }, val) {
